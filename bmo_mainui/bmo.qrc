@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="page">
+    <file>image/bmo3.png</file>
+    <file>image/bmoangry.png</file>
+    <file>image/bmoeyeclose.png</file>
+    <file>image/bmoholy.png</file>
+    <file>image/bmosmile.png</file>
+  </qresource>
+</RCC>
