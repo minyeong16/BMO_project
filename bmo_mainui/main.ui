@@ -308,8 +308,10 @@
       </property>
       <property name="font">
        <font>
-        <family>HY헤드라인M</family>
-        <pointsize>11</pointsize>
+        <family>Piboto</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -333,14 +335,13 @@
         <widget class="QPushButton" name="exit">
          <property name="font">
           <font>
-           <family>HY헤드라인M</family>
-           <pointsize>11</pointsize>
+           <family>PibotoLt</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="mouseTracking">
-          <bool>true</bool>
-         </property>
-         <property name="tabletTracking">
           <bool>true</bool>
          </property>
          <property name="text">
@@ -355,14 +356,19 @@
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="tabletTracking" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="1">
         <widget class="QPushButton" name="restart">
          <property name="font">
           <font>
-           <family>HY헤드라인M</family>
-           <pointsize>11</pointsize>
+           <family>PibotoLt</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -383,8 +389,10 @@
         <widget class="QPushButton" name="sys_reboot">
          <property name="font">
           <font>
-           <family>HY헤드라인M</family>
-           <pointsize>11</pointsize>
+           <family>Piboto</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -399,8 +407,10 @@
         <widget class="QPushButton" name="sys_shutdown">
          <property name="font">
           <font>
-           <family>HY헤드라인M</family>
-           <pointsize>11</pointsize>
+           <family>Piboto</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">

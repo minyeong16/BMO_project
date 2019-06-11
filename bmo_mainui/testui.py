@@ -12,6 +12,7 @@ form_class1 = uic.loadUiType('main.ui')[0]
 # form_class2 = uic.loadUiType('main.ui')[0]
 CurrentIndex = 0
 
+subprocess.Popen("googlesamples-assistant-hotword --project_id bmo-assistant-f4b98 --device_model_id bmo-assistant-f4b98-bmo-3x19ql", shell=True)
 
 class MyWindow(QMainWindow, form_class1):
     def __init__(self):
@@ -20,8 +21,7 @@ class MyWindow(QMainWindow, form_class1):
         self.setWindowTitle('BMO')
         self.resize(480, 320)
         self.center()
-        self.imagelist = ['image/bmo3.png', 'image/bmoangry.png',
-                          'image/bmoeyeclose.png', 'image/bmoholy.png', 'image/bmosmile.png']
+        self.imagelist = ['image/bmo3.png', 'image/bmoangry.png', 'image/bmoeyeclose.png', 'image/bmoholy.png', 'image/bmosmile.png']
         pixmap = QPixmap(self.imagelist[random.randint(0, 4)])
         self.label.setPixmap(pixmap)
         self.pushButton.clicked.connect(self.main_clicked)
@@ -67,10 +67,10 @@ class MyWindow(QMainWindow, form_class1):
 
     def restart_clicked(self):
         self.close()
-        subprocess.call("python"+" testui.py", shell=True)
+        subprocess.call("python3"+" testui.py", shell=True)
 
     def shutdown_clicked(self):
-        os.system("sudo shutdown -h now")
+        os.system('sudo shutdown now')
 
     def reboot_clicked(self):
         os.system("sudo reboot")
