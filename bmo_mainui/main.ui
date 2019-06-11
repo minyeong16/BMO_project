@@ -49,8 +49,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>480</width>
-      <height>320</height>
+      <width>481</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -137,15 +137,15 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(197, 231, 211)</string>
+      <string notr="true"/>
      </property>
      <widget class="QPushButton" name="setting">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>270</y>
-        <width>93</width>
-        <height>28</height>
+        <x>80</x>
+        <y>220</y>
+        <width>341</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -155,16 +155,111 @@
        </font>
       </property>
       <property name="text">
-       <string>setting</string>
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="back_main">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>30</y>
-        <width>93</width>
-        <height>28</height>
+        <x>0</x>
+        <y>0</y>
+        <width>31</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777210</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>나눔고딕</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>481</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>image/manu-1.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="game1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>80</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>나눔고딕</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>800</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="game2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>120</y>
+        <width>341</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -174,62 +269,23 @@
        </font>
       </property>
       <property name="text">
-       <string>back</string>
+       <string/>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
       </property>
      </widget>
-     <widget class="QWidget" name="layoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>90</y>
-        <width>95</width>
-        <height>151</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
-       <item>
-        <widget class="QPushButton" name="game1">
-         <property name="font">
-          <font>
-           <family>나눔고딕</family>
-           <pointsize>10</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>game1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="game2">
-         <property name="font">
-          <font>
-           <family>나눔고딕</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>game2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="game3">
-         <property name="font">
-          <font>
-           <family>나눔고딕</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>game3</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
+     <zorder>label_2</zorder>
+     <zorder>setting</zorder>
+     <zorder>back_main</zorder>
+     <zorder>game1</zorder>
+     <zorder>game2</zorder>
     </widget>
     <widget class="QWidget" name="stackedWidgetPage3">
      <property name="font">
@@ -239,69 +295,162 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color:rgb(197, 231, 211)</string>
+      <string notr="true"/>
      </property>
      <widget class="QPushButton" name="back_manu">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>30</y>
-        <width>93</width>
-        <height>28</height>
+        <x>10</x>
+        <y>70</y>
+        <width>101</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>NanumGothic</family>
-        <pointsize>10</pointsize>
+        <family>HY헤드라인M</family>
+        <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
        <string>back</string>
       </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>110</y>
-        <width>95</width>
-        <height>111</height>
+        <x>78</x>
+        <y>108</y>
+        <width>331</width>
+        <height>121</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
-       <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
         <widget class="QPushButton" name="exit">
          <property name="font">
           <font>
-           <family>NanumGothic</family>
-           <pointsize>10</pointsize>
+           <family>HY헤드라인M</family>
+           <pointsize>11</pointsize>
           </font>
          </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
          <property name="text">
-          <string>exit</string>
+          <string>bmo exit</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
-       <item>
+       <item row="2" column="1">
         <widget class="QPushButton" name="restart">
          <property name="font">
           <font>
-           <family>NanumGothic</family>
-           <pointsize>10</pointsize>
+           <family>HY헤드라인M</family>
+           <pointsize>11</pointsize>
           </font>
          </property>
          <property name="text">
-          <string>restart</string>
+          <string>bmo restart</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="sys_reboot">
+         <property name="font">
+          <font>
+           <family>HY헤드라인M</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>system reboot</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="sys_shutdown">
+         <property name="font">
+          <font>
+           <family>HY헤드라인M</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>system shutdown</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>481</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>image/manu-3.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>back_manu</zorder>
+     <zorder>layoutWidget</zorder>
     </widget>
    </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>back_manu</tabstop>
+  <tabstop>sys_shutdown</tabstop>
+  <tabstop>exit</tabstop>
+  <tabstop>sys_reboot</tabstop>
+  <tabstop>restart</tabstop>
+  <tabstop>setting</tabstop>
+  <tabstop>back_main</tabstop>
+  <tabstop>game1</tabstop>
+  <tabstop>game2</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources>
   <include location="bmo.qrc"/>
  </resources>
