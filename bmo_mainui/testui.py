@@ -28,8 +28,8 @@ class MyWindow(QMainWindow, form_class1):
         self.back_main.clicked.connect(self.back1_clicked)
         self.back_manu.clicked.connect(self.back2_clicked)
         self.setting.clicked.connect(self.setting_clicked)
-        # self.game1.clicked.connect(self.g1_clicked)
-        # self.game2.clicked.connect(self.g2_clicked)
+        self.game1.clicked.connect(self.g1_clicked)
+        self.game2.clicked.connect(self.g2_clicked)
         self.exit.clicked.connect(QCoreApplication.instance().quit)
         self.restart.clicked.connect(self.restart_clicked)
         self.sys_reboot.clicked.connect(self.reboot_clicked)
@@ -64,6 +64,12 @@ class MyWindow(QMainWindow, form_class1):
     def setting_clicked(self):
         self.stackedWidget.setCurrentIndex(2)
         CurrentIndex = 2
+        
+    def g1_clicked(self):
+        subprocess.call("python3"+" /home/pi/BMO_project/pygame/pygame_pyflying/pyflying.py", shell=True)
+
+    def g2_clicked(self):
+        subprocess.call("python3"+" /home/pi/BMO_project/bmoGame_project/game.py", shell=True)
 
     def restart_clicked(self):
         self.close()
