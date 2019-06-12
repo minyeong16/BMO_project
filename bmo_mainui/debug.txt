@@ -1,0 +1,7 @@
+Loading settings...
+Couldn't open file settings.dat.
+No saved settings; using defaults.
+videoinfo: desktop bpp 32
+SDL_SetVideoMode: 320x240 @ 32bpp
+ error << SIFLoader::LoadHeader: failed to open file 'sprites.sif' >>
+ error << Failed to initialize graphics. >>

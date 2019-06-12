@@ -78,8 +78,12 @@ class MyWindow(QMainWindow, form_class1):
         elif(item.text()=="- game2.py"):
             subprocess.call("python3"+" /home/pi/BMO_project/bmoGame_project/game.py", shell=True)
         else:
-            subprocess.call("python3"+" {}".format(item.text()), shell=True)
-            print("python3"+" {}".format(item.text()))
+            if(os.path.splitext(item.text())[1] == ".py"):
+                subprocess.call("python3"+" {}".format(item.text()), shell=True)
+                #print("python3"+" {}".format(item.text()))
+            else:
+                subprocess.call("cd {}".format(os.path.split(item.text())[0]) + "&&./{}".format(os.path.split(item.text())[1]), shell=True)
+                #print("{}".format(os.path.split(item.text())[0]))
      
     def restart_clicked(self):
         self.close()
