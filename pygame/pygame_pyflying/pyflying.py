@@ -35,7 +35,7 @@ def textObj(text,font):
 def dispMessage(text):
     global gamepad
 
-    largeText = pygame.font.Font('freesansbold.ttf',115)
+    largeText = pygame.font.Font('freesansbold.ttf',70)
     TextSurf, TextRect = textObj(text, largeText)
     TextRect.center = ((pad_width/2),(pad_height/2))
     gamepad.blit(TextSurf,TextRect)
